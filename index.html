@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Taller 1</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+	<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+	<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Lindos y gorditos -->
+    <link 
+        rel = "stylesheet"
+        href = "styles.css"
+    >
+    
+</head>
+<body>
+    <main>
+
+        <!-- Izquierda -->
+        <section class="col-xs-12 col-sm-12 col-md-6">
+
+            <!-- Creo el panel -->
+            <article class="panel panel-default">
+
+                <!-- Yo -->
+                <h1> Santiago Bobadilla </h1>
+
+                <!-- Foto -->
+                <img class="img-fluid max-width: 100% height: auto" src="./Bobi.jpg" alt="Avatar" width="80%">`
+
+                <!-- Datos -->
+                <h2>Datos Personales</h2>
+
+                <!-- Tabla de datos -->
+                <table id="student-table" class = "table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Código</td>
+                            <td>201820728</td>
+                        </tr>
+                        <tr>
+                            <td>Cédula</td>
+                            <td>1018143634</td>
+                        </tr>
+                        <tr>
+                            <td>Edad</td>
+                            <td>20 Años</td>
+                        </tr>
+                        <tr>
+                            <td>Dirección</td>
+                            <td>Calle 154 #47-96</td>
+                        </tr>
+                        <tr>
+                            <td>Teléfono</td>
+                            <td>3132914885</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <!-- Derecha -->
+        <section class="col-xs-12 col-md-6">
+
+            <!-- Creo el panel -->
+            <article class="panel panel-default">
+
+                <!-- Titulo-->
+                <h2>Cursos Actuales</h2>
+
+                <!-- Filtro -->
+                <form style="margin:3px;">
+                    <div class="form-row">
+                      <div class="col-xs-10">
+                          <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                      </div>
+                      <div class="col-xs-2">
+                          <button type="button" id="button-filterByName" class="btn btn-success">Ejecutar</button>
+                      </div>
+                    </div>
+                    <div class = "bla">""</div>
+                </form>
+                
+                 <!-- Materias -->
+                <table class="table">
+                    <thead class="thead-dark">
+                       <tr>
+                          <th class = "titulo">Curso</th>
+                          <th class = "titulo">Profesor</th>
+                          <th class = "titulo">Créditos</th>
+                       </tr>
+                    </thead>
+                    <tbody id="courses">
+                    </tbody>
+                </table>
+
+                <!-- Creditos -->
+                <h2 id = "total-credits">Total Créditos </h2>
+            </article>
+        </section>
+    </main>
+
+    <!-- Funciones -->
+    <script type="module" src="./scripts/ts/main.js"></script>
+</body>
